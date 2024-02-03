@@ -12,18 +12,19 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-black: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #000000;
+  --color-black: #000000;
   --color-primary: #141515;
   --color-secondary: #f85a40;
+  --green-color: #059652;
 }
-
+`
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
@@ -34,9 +35,9 @@
 --------------------------------------------------------------*/
 body {
   overflow-x: hidden;
-  font-family: var(--font-default);
+  font-family: var(--font-black);
   color: snow;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 a {
@@ -135,7 +136,7 @@ section {
   padding: 0;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-default);
+  color: var(--color-black);
 }
 
 .breadcrumbs nav ol a {
@@ -953,7 +954,7 @@ section {
 }
 
 .services .service-item .icon i {
-  color: var(--color-default);
+  color: var(--color-black);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -975,7 +976,7 @@ section {
 }
 
 .services .service-item h3 {
-  color: var(--color-default);
+  color: var(--color-black);
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
@@ -1022,6 +1023,16 @@ section {
   position: relative;
   background: #212121;
   border-radius: 10px;
+}
+
+.testimonials .testimonial-item .view-detail{
+  right: 0;
+  color: white;
+  font-style: italic;
+  text-align: end;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1354,16 +1365,6 @@ section {
   margin-bottom: 50px;
 }
 
-.testimonials .testimonial-item .view-detail{
-  right: 0;
-  color: white;
-  font-style: italic;
-  text-align: end;
-  right: 20px;
-  bottom: 20px;
-  position: absolute;
-}
-
 .portfolio-details .portfolio-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
@@ -1524,13 +1525,13 @@ section {
   line-height: 0;
 }
 
-.pricing .icon::before {
+.pricing .icon {
   position: absolute;
   content: "";
   height: 86px;
   width: 86px;
   border-radius: 50%;
-  background: #87c1bb;
+  background: #00ff51;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
@@ -1579,9 +1580,9 @@ section {
   align-items: center;
 }
 
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
+.pricing-item ul li i {
+  color: var(--green-color);
+  font-size: 25px;
   padding-right: 3px;
 }
 
@@ -1666,7 +1667,7 @@ section {
   border: 0;
   font-size: 18px;
   line-height: 24px;
-  color: var(--color-default);
+  color: var(--color-black);
   text-align: left;
   background: #fff;
   box-shadow: none;
@@ -1732,7 +1733,7 @@ section {
 }
 
 .recent-posts .title a {
-  color: var(--color-default);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -2075,7 +2076,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: var(--color-default);
+  color: var(--color-black);
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2124,7 +2125,7 @@ section {
 }
 
 .blog .posts-list .title a {
-  color: var(--color-default);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -2169,7 +2170,7 @@ section {
   font-weight: 700;
   padding: 0;
   margin: 20px 0 0 0;
-  color: var(--color-default);
+  color: var(--color-black);
 }
 
 .blog .blog-details .content {
@@ -2192,7 +2193,7 @@ section {
 }
 
 .blog .blog-details .content blockquote p {
-  color: var(--color-default);
+  color: var(--color-black);
   line-height: 1.6;
   margin-bottom: 0;
   font-style: italic;
@@ -2287,7 +2288,7 @@ section {
 
 .blog .blog-details .meta-bottom .tags li+li::before {
   padding-right: 6px;
-  color: var(--color-default);
+  color: var(--color-black);
   content: ",";
 }
 
@@ -2316,7 +2317,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: var(--color-default);
+  color: var(--color-black);
 }
 
 .blog .post-author .social-links {
@@ -2348,7 +2349,7 @@ section {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  color: var(--color-default);
+  color: var(--color-black);
 }
 
 .blog .sidebar .sidebar-item+.sidebar-item {
@@ -2409,7 +2410,7 @@ section {
 }
 
 .blog .sidebar .categories ul a {
-  color: var(--color-default);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -2439,7 +2440,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: var(--color-default);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -2522,7 +2523,7 @@ section {
 
 .blog .comments .comment h5 a {
   font-weight: bold;
-  color: var(--color-default);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
