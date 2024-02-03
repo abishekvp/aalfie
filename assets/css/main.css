@@ -1586,15 +1586,15 @@ section {
   padding-right: 3px;
 }
 
-.pricing ul .na {
+.pricing-item ul .na{
   color: rgba(108, 117, 125, 0.5);
 }
 
-.pricing ul .na i {
+.pricing-item ul .na i {
   color: rgba(108, 117, 125, 0.5);
 }
 
-.pricing ul .na span {
+.pricing-item ul .na span {
   text-decoration: line-through;
 }
 
